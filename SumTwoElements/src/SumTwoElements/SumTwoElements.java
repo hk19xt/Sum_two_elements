@@ -22,11 +22,11 @@ public class SumTwoElements {
 
                 secondValue = hashMap.get(amount-numbers[firstValue]);
 
-                if (secondValue == firstValue){
+                if (secondValue == firstValue){ //If the first value and the second value is equal, then break.
                     return null;
                 }
 
-                if (secondValue != firstValue) {
+                if (secondValue != firstValue) { //If the first value is not the same as the second value, then it prints the result.
                     arrayFirst=firstValue;
                     arraySecond=secondValue;
                     return new int[]{arrayFirst, arraySecond};
@@ -35,11 +35,14 @@ public class SumTwoElements {
             }
         }
         return null;
-    }
+    }sumCalculate
+    
+    //This method is to initialize the hashmap with user inputs of numbers and a target value.
     public static void initialize(int[]numbers, int amount){
 
         for (int index = 0; index < numbers.length; index++) {
             hashMap.put(numbers[index], index);
         }
-    }
-}
+    }//initialize
+    
+}//SumTwoElements
