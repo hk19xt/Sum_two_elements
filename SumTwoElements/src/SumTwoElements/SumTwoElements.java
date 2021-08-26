@@ -11,7 +11,7 @@ public class SumTwoElements {
 
         int secondValue = 0;
 
-        initialize(numbers, amount);
+        initialize(numbers, amount); //Initialize the hashmap by inserting the numbers and the target number from user inputs.
 
         int arrayFirst = 0;
         int arraySecond = 0;
