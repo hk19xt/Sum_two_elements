@@ -18,15 +18,15 @@ public class SumTwoElements {
 
            for (int firstValueIndex = 0; firstValueIndex < numbers.length; firstValueIndex++) {
 
-            if (hashMap.containsKey(amount-numbers[firstValueIndex])){
+            if (hashMap.containsKey(amount-numbers[firstValueIndex])){ //Check if the rest numbers have the target value minus the first value.
 
                 secondValueIndex = hashMap.get(amount-numbers[firstValueIndex]);
 
-                if (secondValueIndex == firstValueIndex){
+                if (secondValueIndex == firstValueIndex){ //If the second value index is the same as the first value index, then return null.
                     return null;
                 }
 
-                if (secondValueIndex != firstValueIndex) {
+                if (secondValueIndex != firstValueIndex) { //If the second value is different from the first value, it returns the result.
                     arrayFirst=firstValueIndex;
                     arraySecond=secondValueIndex;
                     return new int[]{arrayFirst, arraySecond};
