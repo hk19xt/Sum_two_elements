@@ -16,19 +16,19 @@ public class SumTwoElements {
         int arrayFirst = 0;
         int arraySecond = 0;
 
-        for (int firstValue = 0; firstValue < numbers.length; firstValue++) {
+           for (int firstValueIndex = 0; firstValueIndex < numbers.length; firstValueIndex++) {
 
-            if (hashMap.containsKey(amount-numbers[firstValue])){
+            if (hashMap.containsKey(amount-numbers[firstValueIndex])){
 
-                secondValue = hashMap.get(amount-numbers[firstValue]);
+                secondValueIndex = hashMap.get(amount-numbers[firstValueIndex]);
 
-                if (secondValue == firstValue){ //If the first value and the second value is equal, then break.
+                if (secondValueIndex == firstValueIndex){
                     return null;
                 }
 
-                if (secondValue != firstValue) { //If the first value is not the same as the second value, then it prints the result.
-                    arrayFirst=firstValue;
-                    arraySecond=secondValue;
+                if (secondValueIndex != firstValueIndex) {
+                    arrayFirst=firstValueIndex;
+                    arraySecond=secondValueIndex;
                     return new int[]{arrayFirst, arraySecond};
 
                 }
